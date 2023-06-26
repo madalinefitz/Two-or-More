@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import {Routes, Route} from 'react-router-dom'
 import Home from './components/Home'
 import AboutUs from './components/AboutUs'
@@ -8,10 +8,9 @@ function App() {
   return (
     <div >
       <NavBar/>
-      <h1>Two or More</h1>
         <Routes>
             <Route exact path="/" element={<Home/>}/>
-            <Route exact path="/AboutUs" element={<AboutUs />}/>
+            <Route exact path="/aboutus" element={<AboutUs />}/>
         </Routes>
     </div>
   );
