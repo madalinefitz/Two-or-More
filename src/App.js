@@ -5,6 +5,7 @@ import AboutUs from './components/AboutUs'
 import NavBar from './components/NavBar'
 import Stories from './components/Stories';
 import Share from './components/Share';
+import Library from './components/Library';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route exact path="/stories" element={<Stories />} />
             <Route exact path="/aboutus" element={<AboutUs />} />
             <Route exact path="/share" element={<Share />} />
+            <Route exact path="/library" element={<Library />} />
         </Routes>
     </div>
   );
