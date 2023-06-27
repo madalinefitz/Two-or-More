@@ -12,6 +12,21 @@ code {
     monospace;
 }
 
+.homeBackground {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #E2DBBE;
+}
+
+.venn {
+  height: 90vh;
+  position: center;
+  padding:0%;
+  margin: auto;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
