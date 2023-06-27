@@ -4,6 +4,7 @@ import Home from './components/Home'
 import AboutUs from './components/AboutUs'
 import NavBar from './components/NavBar'
 import Stories from './components/Stories';
+import Share from './components/Share';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
             <Route exact path="/" element={<Home/>} />
             <Route exact path="/stories" element={<Stories />} />
             <Route exact path="/aboutus" element={<AboutUs />} />
+            <Route exact path="/share" element={<Share />} />
         </Routes>
     </div>
   );
