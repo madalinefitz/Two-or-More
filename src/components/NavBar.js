@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom'
 
 function NavBar(){
     return(
-        <nav className="bg-gray-800">
+        <nav className="bg-[#292929]">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
                     <div className="text-gray-300 " >
