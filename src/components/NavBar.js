@@ -4,37 +4,34 @@ import {NavLink} from 'react-router-dom'
 
 function NavBar(){
     return(
-        <nav className="bg-[#292929]">
+        <nav className="bg-[#D6C6AA]">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
-                    <div className="text-gray-300 " >
-                        TWO OR MORE
-                    </div>
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
                         <div className="hidden sm:ml-6 sm:block">
-                            <div className="flex space-x-4 divide-x-4 divide-gray-300">
-                                <div className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                            <div className="flex space-x-4 divide-x-[2px] divide-[#292929]">
+                                <div className="text-[#292929]-300 hover:bg-[#E8E4DE] px-3 py-2 text-lg font-medium">
                                     <NavLink to='/' exact='true'>
                                         Home
                                     </NavLink>
                                 </div>
                                 
-                                <div className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                <div className="text-[#292929]-300 hover:bg-[#E8E4DE] px-3 py-2 text-lg font-medium">
                                     <NavLink to='aboutus' exact='true' >
                                         About Us
                                     </NavLink>
                                 </div>
-                                <div className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                <div className="text-[#292929]-300 hover:bg-[#E8E4DE] px-3 py-2 text-lg font-medium">
                                     <NavLink to='share' exact='true' >
                                         Share
                                     </NavLink>
                                 </div>
-                                <div className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                <div className="text-[#292929]-300 hover:bg-[#E8E4DE] px-3 py-2 text-lg font-medium">
                                     <NavLink to="stories" exact='true'>
                                         Stories
                                     </NavLink>
                                 </div>
-                                <div className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+                                <div className="text-[#292929]-300 hover:bg-[#E8E4DE] px-3 py-2 text-lg font-medium">
                                     <NavLink to="library" exact='true'>
                                         Library
                                     </NavLink>
