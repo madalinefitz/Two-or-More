@@ -6,15 +6,11 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #292929;
 }
 
 
 .homeBackground {
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-color: #D6C6AA;
   padding: 5vh;
 }
 

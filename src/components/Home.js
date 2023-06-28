@@ -6,7 +6,7 @@ import venn from './vennLogo.png'
 function Home(){
     
     return (
-        <div className="homeBackground">
+        <div className="homeBackground bg-[#D6C6AA]">
             <div className="flex justify-center">
                 <div className="text-6xl pb-8" >Welcome, we're glad you're here.</div>
             </div>
