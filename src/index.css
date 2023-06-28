@@ -17,11 +17,12 @@ code {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  background-color: #E2DBBE;
+  background-color: #D6C6AA;
+  padding: 5vh;
 }
 
 .venn {
-  height: 90vh;
+  height: 80vh;
   position: center;
   padding:0%;
   margin: auto;

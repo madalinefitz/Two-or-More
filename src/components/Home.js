@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react"
-import venn from './vennBrown.png'
+import venn from './vennOutlines.png'
 
 
 
