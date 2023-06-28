@@ -20,6 +20,14 @@ code {
   background-color: #D6C6AA;
   padding: 5vh;
 }
+.aboutBackground {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #D6C6AA;
+  padding: 5vh;
+}
 
 .venn {
   height: 80vh;
