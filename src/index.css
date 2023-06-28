@@ -23,7 +23,7 @@ code {
 
 .venn {
   height: 80vh;
-  position: center;
+  align-self: left;
   padding:0%;
   margin: auto;
 }
