@@ -6,9 +6,9 @@ import venn from './vennLogo.png'
 function Home(){
     
     return (
-        <div className="homeBackground bg-[#D6C6AA]">
+        <div className="bg-[#D6C6AA] p-10">
             <div className="flex justify-center">
-                <div className="text-6xl pb-8" >Welcome, we're glad you're here.</div>
+                <div className="text-6xl pb-8">Welcome, we're glad you're here.</div>
             </div>
             <img alt='venn diagram' src={venn} className="venn"/>
             <div className="flex justify-between m-3 mt-8">
