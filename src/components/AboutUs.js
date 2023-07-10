@@ -1,6 +1,6 @@
 function AboutUs(){
     return(
-        <div className="bg-[#D6C6AA] p-10">
+        <div className="bg-[#D6C6AA] p-10 bg-cover h-screen">
             <div className="flex justify-between bg-[#292929] p-5">
                 <div className="text-[#D6C6AA] text-2xl m-10">
                     <div className="content-center m-5">
