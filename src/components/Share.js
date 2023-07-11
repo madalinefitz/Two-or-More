@@ -1,7 +1,7 @@
 export default function Share () {
     return(
-        <>
-        SHARE PAGE
-        </>
+        <div>
+            <h1>Share YOUR story</h1>
+        </div>
     )
 }
