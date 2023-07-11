@@ -1,4 +1,4 @@
-import {NavLink} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 
 
@@ -11,30 +11,30 @@ function NavBar(){
                         <div className="hidden sm:ml-6 sm:block">
                             <div className="flex space-x-4 divide-x-[2px] divide-[#292929]">
                                 <div className="text-[#292929]-300 hover:bg-[#E8E4DE] px-3 py-2 text-lg font-medium">
-                                    <NavLink to='/' exact='true'>
+                                    <Link to='/'>
                                         Home
-                                    </NavLink>
+                                    </Link>
                                 </div>
                                 
                                 <div className="text-[#292929]-300 hover:bg-[#E8E4DE] px-3 py-2 text-lg font-medium">
-                                    <NavLink to='aboutus' exact='true' >
+                                    <Link to='aboutus' >
                                         About Us
-                                    </NavLink>
+                                    </Link>
                                 </div>
                                 <div className="text-[#292929]-300 hover:bg-[#E8E4DE] px-3 py-2 text-lg font-medium">
-                                    <NavLink to='share' exact='true' >
+                                    <Link to='share' >
                                         Share
-                                    </NavLink>
+                                    </Link>
                                 </div>
                                 <div className="text-[#292929]-300 hover:bg-[#E8E4DE] px-3 py-2 text-lg font-medium">
-                                    <NavLink to="stories" exact='true'>
+                                    <Link to="stories">
                                         Stories
-                                    </NavLink>
+                                    </Link>
                                 </div>
                                 <div className="text-[#292929]-300 hover:bg-[#E8E4DE] px-3 py-2 text-lg font-medium">
-                                    <NavLink to="library" exact='true'>
+                                    <Link to="library">
                                         Library
-                                    </NavLink>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
