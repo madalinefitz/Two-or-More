@@ -5,36 +5,24 @@ function LibraryNav(){
 
     return(
     
-        <nav className="bg-[#D6C6AA] z-20 flex shrink-0 grow-0 justify-around gap-4 border-t border-gray-200 bg-white/50 p-2.5 shadow-lg backdrop-blur-lg dark:border-slate-600/60 dark:bg-slate-800/50 fixed top-2/4 -translate-y-2/4 left-6 min-h-[auto] min-w-[64px] flex-col rounded-lg border">
-            <div>
-                <Link to="vocabulary" class="flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 bg-indigo-50 text-indigo-600 dark:bg-sky-900 dark:text-sky-50">
-                    {/* <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-                    /> */}
-                    <small class="text-center text-xs font-medium"> Vocabulary </small>
-                </Link>
-            </div>
-            <div>
-                <Link to="materials" class="flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 bg-indigo-50 text-indigo-600 dark:bg-sky-900 dark:text-sky-50">
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-                    />
-                    <small class="text-center text-xs font-medium"> Materials </small>
-                </Link>
-            </div>
-            <div>
-                <Link to="books" class="flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 bg-indigo-50 text-indigo-600 dark:bg-sky-900 dark:text-sky-50">
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-                    />
-                    <small class="text-center text-xs font-medium"> Books </small>
-                </Link>
+        <nav className="bg-[#E8E4DE] z-20 flex shrink-0 grow-0 gap-4 p-2.5 shadow-lg backdrop-blur-lg dark:bg-slate-800/50 fixed top-2/4 -translate-y-2/4 left-6 min-h-[auto] min-w-[64px] flex-col">
+            <div className="divide-y-[1px] divide-[#292929]">
+                <div className="hover:bg-[#D6C6AA] px-3 py-2 bg-[#E8E4DE] flex aspect-square min-h-[100px] w-25 flex-col items-center justify-center text-[#292929] dark:bg-sky-900 dark:text-sky-50">
+                    <Link to="vocabulary" >
+                        <div className="text-[#292929]-300 text-lg font-medium"> Vocabulary </div>
+                    </Link>
+                </div>
+                
+                <div className="hover:bg-[#D6C6AA] px-3 py-2 bg-[#E8E4DE] flex aspect-square min-h-[100px] w-25 flex-col items-center justify-center text-[#292929] dark:bg-sky-900 dark:text-sky-50">
+                    <Link to="materials" >
+                        <div className="text-[#292929]-300 text-lg font-medium"> Materials </div>
+                    </Link>
+                </div>
+                <div className="hover:bg-[#D6C6AA] px-3 py-2 bg-[#E8E4DE] flex aspect-square min-h-[100px] w-25 flex-col items-center justify-center text-[#292929] dark:bg-sky-900 dark:text-sky-50">
+                    <Link to="books" >
+                        <div className="text-[#292929]-300 text-lg font-medium"> Books </div>
+                    </Link>
+                </div>
             </div>
 
                                 

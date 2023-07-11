@@ -9,7 +9,7 @@ import LibVocabulary from "./LibVocabulary"
 export default function Library() {
 
     return (
-        <div className="bg-[#D6C6AA] bg-cover">
+        <div className="bg-[#D6C6AA] bg-cover h-screen">
            <LibraryNav/>
            <Routes>
                 <Route path="vocabulary" element={<LibVocabulary />}/>
