@@ -13,10 +13,12 @@ export default function Stories () {
 
 
     return (
-        <div className="bg-[#D6C6AA] bg-cover h-screen">
-            <div className= "flex justify-center">
-                <h1 className="text-8xl font-semibold m-5">We all have a story.</h1>
+        <div className="bg-[#D6C6AA] bg-cover p-10 pb-20 flex justify-center">
+            <div className= "flex-col">
+                <h1 className="text-8xl font-semibold m-10">We all have a story.</h1>
+                <h1 className="text-8xl font-semibold m-10">Share yours</h1>
             </div>
+            
             <div className="content-center mx-40 mb-10">
                 <div className="w-full h-48 mb-10 bg-[#292929]">
                     <div className="text-[#E8E4DE] text-2xl p-6 content-center">

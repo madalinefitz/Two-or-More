@@ -19,34 +19,79 @@ export default function LibMaterials() {
 
 
     return(
-        <div className = "flex justify-center ">
-            <div className="bg-[#292929] w-1/2 mt-20 text-[#E8E4DE] text-2xl p-10 ">
+        <div className = "flex justify-center bg-cover bg-[#D6C6AA] p-10 pb-20">
+            <div className="bg-[#292929] w-1/2 mt-20 text-[#E8E4DE] text-2xl p-20 ">
                 <div className=" flex justify-between p-5">
-                    <div className="">
-                        XYZ Resource
+                    <div className="text-3xl">
+                        ABC Important Resource
                     </div>
                     <div className=" italic">
                         <a href="">READ MORE</a>
                     </div>
-                    
                 </div>
                 <div className=" flex justify-between p-5">
-                    <div className="">
-                        XYZ Resource
+                    <div className="text-3xl">
+                        DEF Important Resource
                     </div>
                     <div className=" italic">
                         <a href="">READ MORE</a>
                     </div>
-                    
                 </div>
                 <div className=" flex justify-between p-5">
-                    <div className="">
-                        XYZ Resource
+                    <div className="text-3xl">
+                        GHI Important Resource
                     </div>
                     <div className="italic">
                         <a href="">READ MORE</a>
                     </div>
-                    
+                </div>
+                <div className=" flex justify-between p-5">
+                    <div className="text-3xl">
+                        JKL Important Resource
+                    </div>
+                    <div className="italic">
+                        <a href="">READ MORE</a>
+                    </div>
+                </div>
+                <div className=" flex justify-between p-5">
+                    <div className="text-3xl">
+                        MNO Important Resource
+                    </div>
+                    <div className="italic">
+                        <a href="">READ MORE</a>
+                    </div>
+                </div>
+                <div className=" flex justify-between p-5">
+                    <div className="text-3xl">
+                        PQR Important Resource
+                    </div>
+                    <div className="italic">
+                        <a href="">READ MORE</a>
+                    </div>
+                </div>
+                <div className=" flex justify-between p-5">
+                    <div className="text-3xl">
+                        STU Important Resource
+                    </div>
+                    <div className="italic">
+                        <a href="">READ MORE</a>
+                    </div>
+                </div>
+                <div className=" flex justify-between p-5">
+                    <div className="text-3xl">
+                        VWX Important Resource
+                    </div>
+                    <div className="italic">
+                        <a href="">READ MORE</a>
+                    </div>
+                </div>
+                <div className=" flex justify-between p-5">
+                    <div className="text-3xl">
+                        GHI Important Resource
+                    </div>
+                    <div className="italic">
+                        <a href="">READ MORE</a>
+                    </div>
                 </div>
             </div>
         </div>
