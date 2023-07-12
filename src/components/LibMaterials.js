@@ -20,7 +20,7 @@ export default function LibMaterials() {
 
     return(
         <div className = "flex justify-center bg-cover bg-[#D6C6AA] p-10 pb-20">
-            <div className="bg-[#292929] w-1/2 mt-20 text-[#E8E4DE] text-2xl p-20 ">
+            <div className="bg-[#292929] w-2/3 mt-20 text-[#E8E4DE] text-2xl p-20 ">
                 <div className=" flex justify-between p-5">
                     <div className="text-3xl">
                         ABC Important Resource
