@@ -23,26 +23,7 @@ function LibraryNav(){
                         <div className="text-[#292929]-300 text-lg font-medium"> Book Suggestions </div>
                     </Link>
                 </div>
-            </div>
-
-                                
-                                {/* <div className="text-[#292929]-300 hover:bg-[#E8E4DE] px-3 py-2 text-lg font-medium">
-                                    
-                                        Vocabulary
-                                    </NavLink>
-                                </div>
-                                
-                                <div className="text-[#292929]-300 hover:bg-[#E8E4DE] px-3 py-2 text-lg font-medium">
-                                    <NavLink to='aboutus' exact='true' >
-                                        Reading Material
-                                    </NavLink>
-                                </div>
-                                <div className="text-[#292929]-300 hover:bg-[#E8E4DE] px-3 py-2 text-lg font-medium">
-                                    <NavLink to='share' exact='true' >
-                                        Book Suggestions
-                                    </NavLink>
-                                </div> */}
-                            
+            </div>               
         </nav>
     )
 }
