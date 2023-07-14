@@ -24,11 +24,11 @@ export default function LibVocabulary() {
     //     return(
     //         <div>
     //             {showBack ?
-//                     <div onClick={handleFlip} class="bg-[#292929] rounded-full shadow-xlg max-w-sm col-span-2">
+//                     <div onClick={handleFlip} class="bg-[#292929] rounded-full shadow-lg backdrop-blur-lg dark:bg-slate-800/50 w-40 h-40">
 //                         <h1 class="text-[#E8E4DE]">{word.definition}</h1>
 //                     </div> 
 //                     :
-//                     <div onClick={handleFlip} class="bg-[#292929] rounded-full shadow-xlg max-w-sm">
+//                     <div onClick={handleFlip} class="bg-[#292929] rounded-full shadow-lg backdrop-blur-lg dark:bg-slate-800/50 w-40 h-40 justify-center p-10">
 //                         <h1 class="text-[#E8E4DE]">{word.word}</h1>
 //                     </div>
     //             }
@@ -54,50 +54,53 @@ export default function LibVocabulary() {
     }
 
     return(
-        <div class="container mx-auto align-content-center p-20">
-            <div class="flex">
-                <div>{wordComponent}</div>
-                <div class="flex-1">
+        <div className="container mx-auto align-content-center">
+            <div className="text-center text-4xl pb-20 pt-10">
+                    <h1>Words Have Meaning</h1>
+            </div>
+            <div className="flex flex-row pr-40 pl-40">
+                {/* <div>{wordComponent}</div> */}
+                <div className="basis-1/4 ">
                     {showBack?
-                        <div onClick={handleFlip} class="bg-[#292929] rounded-full shadow-xlg ">
-                            <h1 class="text-[#E8E4DE]">Definition</h1>
+                        <div onClick={handleFlip} className="hover:cursor-pointer bg-[#E8E4DE] rounded-full shadow-lg backdrop-blur-lg dark:bg-slate-800/50 w-52 h-52 p-10">
+                            <p className="text-[#292929] text-xl text-center font-semibold">definition of word</p>
                         </div> 
                         :
-                        <div onClick={handleFlip} class="bg-[#292929] rounded-full shadow-xlg max-w-sm">
-                            <h1 class="text-[#E8E4DE]">New Word</h1>
+                        <div onClick={handleFlip} className="hover:cursor-pointer bg-[#292929] rounded-full shadow-lg backdrop-blur-lg dark:bg-slate-800/50 w-52 h-52 p-10">
+                            <p className="text-[#E8E4DE] text-3xl text-center font-semibold">New Word</p>
                         </div>
                     }
                 </div>
-                <div>
+                <div className="basis-1/4">
                     {showBack2?
-                        <div onClick={handleFlip2} class="bg-[#292929] rounded-full shadow-xlg max-w-sm col-span-2">
-                            <h1 class="text-[#E8E4DE]">Definition2</h1>
+                        <div onClick={handleFlip2} className="hover:cursor-pointer bg-[#E8E4DE] rounded-full shadow-lg backdrop-blur-lg dark:bg-slate-800/50 w-52 h-52 p-10">
+                            <h1 className="text-[#292929] text-lg text-center font-semibold">definition of word 2</h1>
                         </div> 
                         :
-                        <div onClick={handleFlip2} class="bg-[#292929] rounded-full shadow-xlg max-w-sm">
-                            <h1 class="text-[#E8E4DE]">New Word2</h1>
+                        <div onClick={handleFlip2} className="hover:cursor-pointer bg-[#292929] rounded-full shadow-lg backdrop-blur-lg dark:bg-slate-800/50 w-52 h-52 p-10">
+                            <h1 className="text-[#E8E4DE] text-3xl text-center font-semibold">New Word2</h1>
                         </div>
                     }
                 </div>
-                <div>
+                <div className="basis-1/4">
                     {showBack3?
-                        <div onClick={handleFlip3} class="bg-[#292929] rounded-full shadow-xlg max-w-sm col-span-2">
-                            <h1 class="text-[#E8E4DE]">Definition3</h1>
+                        <div onClick={handleFlip3} className="hover:cursor-pointer bg-[#E8E4DE] rounded-full shadow-lg backdrop-blur-lg dark:bg-slate-800/50 w-52 h-52 p-10">
+                            <h1 className="text-[#292929] text-lg text-center font-semibold">definition of word 3</h1>
                         </div> 
                         :
-                        <div onClick={handleFlip3} class="bg-[#292929] rounded-full shadow-xlg max-w-sm">
-                            <h1 class="text-[#E8E4DE]">New Word3</h1>
+                        <div onClick={handleFlip3} className="hover:cursor-pointer bg-[#292929] rounded-full shadow-lg backdrop-blur-lg dark:bg-slate-800/50 w-52 h-52 p-10">
+                            <h1 className="text-[#E8E4DE] text-3xl text-center font-semibold">New Word3</h1>
                         </div>
                     }
                 </div>
-                <div>
+                <div className="basis-1/4">
                     {showBack4?
-                        <div onClick={handleFlip4} class="bg-[#292929] rounded-full shadow-xlg max-w-sm col-span-2">
-                            <h1 class="text-[#E8E4DE]">Definition4</h1>
+                        <div onClick={handleFlip4} className="hover:cursor-pointer bg-[#E8E4DE] rounded-full shadow-lg backdrop-blur-lg dark:bg-slate-800/50 w-52 h-52 p-10">
+                            <h1 className="text-[#292929] text-lg text-center font-semibold">definition of word 4</h1>
                         </div> 
                         :
-                        <div onClick={handleFlip4} class="bg-[#292929] rounded-full shadow-xlg max-w-sm">
-                            <h1 class="text-[#E8E4DE]">New Word4</h1>
+                        <div onClick={handleFlip4} className="hover:cursor-pointer bg-[#292929] rounded-full shadow-lg backdrop-blur-lg dark:bg-slate-800/50 w-52 h-52 p-10">
+                            <h1 className="text-[#E8E4DE] text-3xl text-center font-semibold">New Word4</h1>
                         </div>
                     }
                 </div>
