@@ -10,11 +10,12 @@ export default function Library() {
 
     return (
         <div className="bg-[#D6C6AA] bg-cover h-screen">
-           <LibraryNav/>
-           <Routes>
-                <Route path="vocabulary" element={<LibVocabulary />}/>
-                <Route path="materials" element={<LibMaterials />} />
-                <Route path="books" element={<LibBooks />} />
+            <div className="text-5xl text-center pt-10">What's Inspiring Our Community</div>
+            <LibraryNav/>
+            <Routes>
+                    <Route exact path="vocabulary" element={<LibVocabulary />}/>
+                    <Route exact path="materials" element={<LibMaterials />} />
+                    <Route exact path="books" element={<LibBooks />} />
             </Routes>
         </div>
     )
