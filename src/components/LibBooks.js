@@ -11,13 +11,28 @@ export default function LibBooks() {
 
     // const bookComponents = books.map(book => {
     //     return (
-    //         <div>
-    //             <img src={book.img} alt={`${book.title} cover`} />
-    //             <h1>{book.title}</h1>
-    //             <div>{book.amazonLink}</div>
+    //     
+    //         <div class="flex ps-72 pr-0 py-14 ">
+    //             <div class="w-1/2">
+    //                 <div class="max-w-xs rounded overflow-hidden shadow-lg bg-[#292929]">
+    //                     <img class="w-full max-h-40" src={book.img} alt={`${book.title} cover`}/>
+    //                     <div class="px-6 py-4">
+    //                         <h1 class="font-bold text-xl mb-2 text-[#E8E4DE]">{book.title}</h1>
+    //                         <p class="text-[#E8E4DE] text-base">
+    //                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+    //                         </p>
+    //                         <p>{book.amazonLink}</p>
+    //                     </div>
+    //                     <div class="flex items-center">
+    //                         <img class="w-10 h-10 rounded-full mr-4 p-2" src={book.authorPhoto} alt={book.author}/>
+    //                         <div class="text-sm">
+    //                             <p class="text-[#E8E4DE] leading-none">{book.author}</p>
+    //                         </div>
+    //                     </div>
+    //             </div>
     //         </div>
-    //     )
-    // })
+    //        )
+    //  }
 
 
     return(
