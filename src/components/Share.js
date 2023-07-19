@@ -1,3 +1,5 @@
+import Typewriter from 'typewriter-effect';
+
 export default function Share () {
     return(
         <div>
@@ -5,7 +7,14 @@ export default function Share () {
             <div className="text-8xl text-right ml-20 p-10">We'd love to hear more about you! This is a safe space to share your story. Your experiences. Your history. Your journey.
             </div>
         </div>
-            <div className="text-[#292929] sm:text-2xl md:text-8xl w-2/3 p-10">Tell your story.</div>
+            <div className="text-[#292929] sm:text-2xl md:text-8xl w-2/3 p-10">
+            <Typewriter
+                options={{
+                strings: ['Tell your story.'],
+                autoStart: true,
+                loop: true,
+                }}
+            /></div>
             <div className="flex justify-end p-5 pb-10">
                 <form className="p-10 sm:w-full ">
                     <div class="md:flex md:items-center mb-6">
