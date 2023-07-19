@@ -8,7 +8,7 @@ function Home(){
     return (
         <div className="bg-[#D6C6AA] p-10">
             <div className="flex justify-center">
-                <div className="text-6xl pb-8">Welcome, we're glad you're here.</div>
+                <div className="[word-spacing:40px] font-bold text-6xl pb-8">WELCOME, WE'RE GLAD YOU'RE HERE.</div>
             </div>
             <img alt='venn diagram' src={venn} className="venn"/>
             <div className="flex justify-between m-3 mt-8">
