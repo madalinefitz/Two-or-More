@@ -7,7 +7,7 @@ export default function Share () {
             <div className="text-5xl lg:text-8xl text-right lg:ml-20 lg:p-8 p-4">
                 We'd love to hear more about you! This is a safe space to share your story. Your experiences. Your history. Your journey.
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className=" w-10 h-10">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" className="animate-bounce w-16 h-16">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
             </svg>
         </div>
