@@ -20,8 +20,8 @@ export default function Stories () {
                 <h1 className="justify-center text-8xl font-semibold m-2">We all have a story.</h1>
             </div>
             <div className= "flex justify-center ">
-                <div className="text-6xl font-semibold mb-5 italic ">
-                    <Link className="hover:text-white" to="/share">Share Yours</Link>
+                <div className="text-5xl font-semibold mb-5 italic ">
+                    <Link className="hover:text-white animate-pulse" to="/share">Ready to share yours?</Link>
                 </div>
             </div>
             <div className="content-center mx-40 mb-10">
