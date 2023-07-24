@@ -1,7 +1,7 @@
 import LibraryNav from "./LibraryNav"
 import {Routes, Route} from 'react-router-dom'
-import LibBooks from "./LibBooks"
-import LibMaterials from "./LibMaterials"
+import LibBooks from "./LibReading"
+import LibMaterials from "./LibDigital"
 import LibVocabulary from "./LibVocabulary"
 
 
