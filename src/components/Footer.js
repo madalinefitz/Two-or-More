@@ -1,11 +1,36 @@
 export default function Footer () {
+
     return (
-        <div className="">
-            <div>
-                <div>Our Mission</div>
-                <div>Two Or More Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras placerat nec arcu a molestie. Aenean mollis interdum erat. Praesent neque est, luctus pharetra est non, facilisis dapibus odio. Donec imperdiet, nulla non hendrerit dapibus, leo quam consequat nunc, eu volutpat risus tellus in nisl. Etiam vitae vulputate leo, eleifend hendrerit dolor. Praesent interdum, massa sit amet porta rhoncus, erat massa semper enim, sit amet convallis quam nulla quis risus.  </div>
+        <footer class="bg-neutral-100 text-center dark:bg-neutral-600 lg:text-left">
+        <div class="container p-6 text-neutral-800 dark:text-neutral-200">
+            <div class="grid gap-4 lg:grid-cols-2">
+            <div class="mb-6 md:mb-0">
+                <h5 class="mb-2 font-medium uppercase">Our Mission</h5>
+
+                <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                atque ea quis molestias. Fugiat pariatur maxime quis culpa
+                corporis vitae repudiandae aliquam voluptatem veniam, est atque
+                cumque eum delectus sint!
+                </p>
             </div>
 
+            <div class="mb-6 md:mb-0">
+                <h5 class="mb-2 font-medium uppercase">Our Vision</h5>
+
+                <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                atque ea quis molestias. Fugiat pariatur maxime quis culpa
+                corporis vitae repudiandae aliquam voluptatem veniam, est atque
+                cumque eum delectus sint!
+                </p>
+            </div>
+            </div>
         </div>
+        <div
+            class="bg-neutral-200 p-4 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
+            © 2023 Copyright
+        </div>
+    </footer>
     )
 }
