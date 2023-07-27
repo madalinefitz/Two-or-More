@@ -46,7 +46,7 @@ export default function GetConnected () {
                         clip-rule="evenodd" />
                     </svg>
                 </a>
-                <a href="#!" className="mr-9 text-neutral-800 dark:text-neutral-200">
+                <a href="https://www.instagram.com/twoormore.races/" target="_blank" className="mr-9 text-neutral-800 dark:text-neutral-200">
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-8 w-8"
