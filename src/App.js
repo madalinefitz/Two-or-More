@@ -7,6 +7,7 @@ import Stories from './components/Stories';
 import Share from './components/Share';
 import Library from './components/Library';
 import Footer from './components/Footer';
+import GetConnected from './components/GetConnected';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/share" element={<Share />} />
             <Route path="/library/*" element={<Library />} />
+            <Route path="/connect" element={<GetConnected/>} />
         </Routes>
         <Footer />
     </div>
