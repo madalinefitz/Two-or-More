@@ -6,6 +6,7 @@ import NavBar from './components/NavBar'
 import Stories from './components/Stories';
 import Share from './components/Share';
 import Library from './components/Library';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/share" element={<Share />} />
             <Route path="/library/*" element={<Library />} />
         </Routes>
+        <Footer />
     </div>
   );
 }
