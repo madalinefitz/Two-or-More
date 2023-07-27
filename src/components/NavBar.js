@@ -5,8 +5,12 @@ import {Link} from 'react-router-dom'
 function NavBar(){
     return(
         <nav className="bg-[#D6C6AA]">
+            
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
+                    <div className="bg-[#525252] hover:bg-gray-200 hover:text-[#525252] text-white font-bold py-3 px-4 rounded-full">
+                        <Link to='/connect'>GET CONNECTED</Link>
+                    </div>
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
                         <div className="hidden sm:ml-6 sm:block">
                             <div className="flex space-x-4 divide-x-[2px] divide-[#292929]">
