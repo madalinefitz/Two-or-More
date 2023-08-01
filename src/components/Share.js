@@ -48,7 +48,7 @@ export default function Share () {
                     <div class="md:flex md:items-center mb-6">
                         <div class="md:w-1/2">
                         <label class="block font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-password">
-                            Password
+                            Share your Story...
                         </label>
                         </div>
                         <div class="md:w-1/2">
