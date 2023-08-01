@@ -19,7 +19,7 @@ export default function Share () {
         },
         validationSchema:formSchema,
         onSubmit: (values) => {
-            fetch("http://127.0.0.1:8080/stories", {
+            fetch("/stories", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 credentials: "include",
@@ -33,10 +33,13 @@ export default function Share () {
 
     const handleResponse = (r) => {
         if (r.ok) {
-            console.log("YAY")
+            console.log("STATUS: ", r.status)
             r.json().then(data => {
                 console.log(data)
             })
+        }
+        else {
+            console.log("STATUS: ", r.status, r.message)
         }
     }
 
@@ -98,7 +101,7 @@ export default function Share () {
                     <div className="md:flex md:items-center">
                         <div className="md:w-1/2"></div>
                         <div className="md:w-1/2">
-                        <button className="shadow bg-[#9DC08B] hover:bg-[#9DC08B]focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                        <button className="shadow bg-[#9DC08B] hover:bg-[#9DC08B]focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
                             Share
                         </button>
                         </div>
