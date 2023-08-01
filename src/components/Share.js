@@ -1,6 +1,22 @@
 import Typewriter from 'typewriter-effect';
+import { useState } from 'react';
 
 export default function Share () {
+    const newStory = {
+        firstName: "",
+        lastInitial: "",
+        story: ""
+    }
+    const [formData, setFormData] = useState(newStory)
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.id]: e.target.value
+        })
+    }
+
+
     return(
         <div>
         <div className="flex-col p-28 text-[#E8E4DE] bg-[#292929] bg-cover h-full">
@@ -32,7 +48,7 @@ export default function Share () {
                         </label>
                         </div>
                         <div class="md:w-1/2">
-                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#9DC08B]" id="inline-full-name" type="text" value="Jane"/>
+                        <input onChange={handleChange} class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#9DC08B]" id="firstName" type="text" value={formData.firstName}/>
                         </div>
                     </div>
                     <div class="md:flex md:items-center mb-6">
