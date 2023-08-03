@@ -6,6 +6,18 @@ import Story from "./Story"
 export default function Stories () {
     const [stories, setStories] = useState([])
 
+    useEffect(() => {
+        fetch("/stories")
+            .then(r => {
+                if(r.ok) {
+                    r.json().then(data => {
+                        setStories(data)
+                    })
+                }
+            })
+    }, [])
+    
+
     const displayStories = stories.map(s => {
         return (
             <Story key={s.id} s={s}/>
@@ -25,33 +37,10 @@ export default function Stories () {
                 </div>
             </div>
             <div className="content-center mx-40 mb-10">
-                <div className="w-full bg-cover mb-10 bg-[#292929] p-10">
-                    <div className="text-[#E8E4DE] text-2xl p-6 content-center">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit, massa facilisis convallis consequat primis in nullam urna, penatibus elementum ad scelerisque condimentum maecenas. Odio nunc nullam iaculis fusce praesent fringilla hac cubilia, eleifend id urna mi quis congue sodales, augue viverra nulla nascetur commodo porta risus. Mus quis fermentum odio arcu class dis mattis, sem luctus augue et ac
-                    </div>
-                    <div className="text-[#E8E4DE] text-2xl pl-7 content-center">
-                        - unknown
-                    </div>
-                </div>
-                <div className="w-full bg-cover mb-10 bg-[#292929] p-10">
-                    <div className="text-[#E8E4DE] text-2xl p-6 content-center">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit, massa facilisis convallis consequat primis in nullam urna, penatibus elementum ad scelerisque condimentum maecenas. Odio nunc nullam iaculis fusce praesent fringilla hac cubilia, eleifend id urna mi quis congue sodales, augue viverra nulla nascetur commodo porta risus. Mus quis fermentum odio arcu class dis mattis, sem luctus augue et ac
-                    </div>
-                    <div className="text-[#E8E4DE] text-2xl pl-7 content-center">
-                        - unknown
-                    </div>
-                </div>
-                <div className="w-full bg-cover mb-10 bg-[#292929] p-10">
-                    <div className="text-[#E8E4DE] text-2xl p-6 content-center">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit, massa facilisis convallis consequat primis in nullam urna, penatibus elementum ad scelerisque condimentum maecenas. Odio nunc nullam iaculis fusce praesent fringilla hac cubilia, eleifend id urna mi quis congue sodales, augue viverra nulla nascetur commodo porta risus. Mus quis fermentum odio arcu class dis mattis, sem luctus augue et ac
-                    </div>
-                    <div className="text-[#E8E4DE] text-2xl pl-7 content-center">
-                        - unknown
-                    </div>
-                </div>
+            {displayStories}
             </div>
             <div>
-                {displayStories}
+                
             </div>
             <div className="flex justify-center">
                 <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Find More Stories</button>
