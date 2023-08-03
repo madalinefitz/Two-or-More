@@ -2,6 +2,7 @@ import {useState, useEffect} from "react"
 
 export default function LibVocabCard ({definition, term}) {
     const [showBack, setShowBack] = useState(false)
+    
     const handleFlip = () => {
         setShowBack(!showBack)
     }

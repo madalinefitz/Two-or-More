@@ -1,4 +1,5 @@
 import {useState, useEffect} from "react"
+import LibVocabCard from "./LibVocabCard"
 
 export default function LibVocabulary() {
 
@@ -11,12 +12,12 @@ export default function LibVocabulary() {
         }, []
     )
 
-
     
     const wordComponent = vocab.map( word => {
-        
+        return (
+            <LibVocabCard key={word.id} {...word}/>
+        )
     })
-
 
     return(
         <div className="bg-[#D6C6AA] bg-cover h-auto">
