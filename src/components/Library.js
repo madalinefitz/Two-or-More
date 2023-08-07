@@ -1,7 +1,7 @@
 import LibraryNav from "./LibraryNav"
 import {Routes, Route} from 'react-router-dom'
-import LibBooks from "./LibReading"
-import LibMaterials from "./LibDigital"
+import LibReading from "./LibReading"
+import LibDigital from "./LibDigital"
 import LibVocabulary from "./LibVocabulary"
 
 
@@ -14,8 +14,8 @@ export default function Library() {
             <LibraryNav/>
             <Routes>
                     <Route exact path="vocabulary" element={<LibVocabulary />}/>
-                    <Route exact path="materials" element={<LibMaterials />} />
-                    <Route exact path="books" element={<LibBooks />} />
+                    <Route exact path="digital" element={<LibDigital />} />
+                    <Route exact path="reading" element={<LibReading />} />
             </Routes>
         </div>
     )

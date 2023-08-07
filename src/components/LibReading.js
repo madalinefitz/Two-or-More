@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react"
 
-export default function LibBooks() {
+export default function LibReading() {
     // const [books, setBooks] = useState([])
 
     // useEffect(()=>{

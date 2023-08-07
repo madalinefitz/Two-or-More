@@ -1,4 +1,4 @@
-export default function LibMaterials() {
+export default function LibDigital() {
 
 // if we want to dynamically render resources, here:
 // const [materials, setMaterials] = useState([])
