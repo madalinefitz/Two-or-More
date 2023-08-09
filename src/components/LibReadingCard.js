@@ -1,12 +1,6 @@
 import {useState, useEffect} from "react"
 
 export default function LibReadingCard({title, authorName, authorPhoto, link, bookCover}) {
-
-    // const handleClick = () => {
-    //     console.log({link})
-    //     window.open({link}, '_blank', 'noreferrer')
-    // }
-
     
     return(
         <div class="max-w-xs rounded overflow-hidden shadow-lg bg-[#292929] mx-20 cursor-pointer">
