@@ -14,12 +14,12 @@ function LibraryNav(){
                 </div>
                 
                 <div className="hover:bg-[#D6C6AA] p-2 bg-[#E8E4DE] flex aspect-square min-h-[80px] w-25 flex-col items-center justify-center">
-                    <Link to="materials" >
+                    <Link to="digital" >
                         <div className="text-[#292929]-300 text-lg font-medium"> Digital Materials </div>
                     </Link>
                 </div>
                 <div className="hover:bg-[#D6C6AA] p-2 bg-[#E8E4DE] flex aspect-square min-h-[80px] w-25 flex-col items-center justify-center">
-                    <Link to="books" >
+                    <Link to="reading" >
                         <div className="text-[#292929]-300 text-lg font-medium"> Reading Suggestions </div>
                     </Link>
                 </div>

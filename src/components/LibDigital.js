@@ -1,6 +1,7 @@
+
 import { useEffect, useState } from "react"
 
-export default function LibMaterials() {
+export default function LibDigital() {
     const [digMaterials, setDigMaterials] = useState([])
 
     useEffect(() => {
@@ -34,7 +35,6 @@ export default function LibMaterials() {
         </div>
         )
     })
-
 
 
 
