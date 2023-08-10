@@ -1,98 +1,47 @@
-export default function LibMaterials() {
+import { useEffect, useState } from "react"
 
-// if we want to dynamically render resources, here:
-// const [materials, setMaterials] = useState([])
-// const displayMaterials = materials.map(m => {
-//      return (
-//      <div className=" flex justify-between m-5">
-            {/* <div className="text-[#E8E4DE]">
-                XYZ Resource
+export default function LibMaterials() {
+    const [digMaterials, setDigMaterials] = useState([])
+
+    useEffect(() => {
+        fetch('/digitalmaterials')
+            .then(r => {
+                if(r.ok) {
+                    r.json().then(data => {
+                        setDigMaterials(data)
+                    })
+                } else {
+                    console.log(r.status)
+                }
+            })
+    }, [])
+
+    const displayDigMaterials = digMaterials.map(d => {
+        return (
+        <div className="p-5">
+            <div className=" flex justify-between p-5">
+                <div className="text-xl px-4">
+                    {d.title}
+                </div>
+                
+                <div className=" italic">
+                    <a target="_blank" rel="noreferrer" href={d.link}>READ MORE</a>
+                </div>
             </div>
-            <div className="text-[#E8E4DE]">
-                <a href="">READ MORE</a>
+            <div className="px-14">
+                - {d.authorName}
             </div>
-        </div> */}
-//  )
-// })
+        </div>
+        )
+    })
 
 
 
 
     return(
-        <div className = "flex justify-center bg-cover bg-[#D6C6AA] p-10 pb-20">
-            <div className="bg-[#292929] w-2/3 mt-20 text-[#E8E4DE] text-2xl p-20 ">
-                <div className=" flex justify-between p-5">
-                    <div className="text-3xl">
-                        ABC Important Resource
-                    </div>
-                    <div className=" italic">
-                        <a href="">READ MORE</a>
-                    </div>
-                </div>
-                <div className=" flex justify-between p-5">
-                    <div className="text-3xl">
-                        DEF Important Resource
-                    </div>
-                    <div className=" italic">
-                        <a href="">READ MORE</a>
-                    </div>
-                </div>
-                <div className=" flex justify-between p-5">
-                    <div className="text-3xl">
-                        GHI Important Resource
-                    </div>
-                    <div className="italic">
-                        <a href="">READ MORE</a>
-                    </div>
-                </div>
-                <div className=" flex justify-between p-5">
-                    <div className="text-3xl">
-                        JKL Important Resource
-                    </div>
-                    <div className="italic">
-                        <a href="">READ MORE</a>
-                    </div>
-                </div>
-                <div className=" flex justify-between p-5">
-                    <div className="text-3xl">
-                        MNO Important Resource
-                    </div>
-                    <div className="italic">
-                        <a href="">READ MORE</a>
-                    </div>
-                </div>
-                <div className=" flex justify-between p-5">
-                    <div className="text-3xl">
-                        PQR Important Resource
-                    </div>
-                    <div className="italic">
-                        <a href="">READ MORE</a>
-                    </div>
-                </div>
-                <div className=" flex justify-between p-5">
-                    <div className="text-3xl">
-                        STU Important Resource
-                    </div>
-                    <div className="italic">
-                        <a href="">READ MORE</a>
-                    </div>
-                </div>
-                <div className=" flex justify-between p-5">
-                    <div className="text-3xl">
-                        VWX Important Resource
-                    </div>
-                    <div className="italic">
-                        <a href="">READ MORE</a>
-                    </div>
-                </div>
-                <div className=" flex justify-between p-5">
-                    <div className="text-3xl">
-                        GHI Important Resource
-                    </div>
-                    <div className="italic">
-                        <a href="">READ MORE</a>
-                    </div>
-                </div>
+        <div className = "flex justify-center p-5 ">
+            <div className="bg-[#292929] w-2/3 text-[#E8E4DE] text-2xl p-5">
+                {displayDigMaterials}
             </div>
         </div>
     )
