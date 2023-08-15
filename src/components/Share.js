@@ -46,13 +46,16 @@ export default function Share () {
 
     return(
         <div>
-        <div className="flex-col p-28 text-[#E8E4DE] bg-[#292929] bg-cover h-full">
-            <div className="text-5xl lg:text-8xl text-right lg:ml-20 lg:p-8 p-4">
-                We'd love to hear more about you! This is a safe space to share your story. Your experiences. Your history. Your journey.
+        <div className="flex-col py-28 pl-28 pr-16 text-[#E8E4DE] bg-[#292929] bg-cover h-full">
+            <div className="text-5xl lg:text-7xl text-right lg:ml-20 lg:p-8 p-4">
+                We'd love to hear more about you! This is a safe space to share your story. 
+                Your experiences. 
+                Your history. 
+                Your journey.
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="animate-bounce w-16 h-16">
+            {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="animate-bounce w-16 h-16">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
-            </svg>
+            </svg> */}
         </div>
         <div className="flex">
             <div className="text-[#292929] text-5xl md:text-8xl w-2/3 p-10">
