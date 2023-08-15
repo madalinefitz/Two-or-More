@@ -20,7 +20,7 @@ export default function LibVocabulary() {
     })
 
     return(
-        <div className="bg-[#D6C6AA] bg-cover h-auto">
+        <div>
             <div className="container mx-auto align-content-center">
                 <div className="text-center text-4xl pb-20 pt-10">
                         <h1>Words Have Meaning</h1>
