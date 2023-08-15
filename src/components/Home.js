@@ -8,7 +8,7 @@ function Home(){
     return (
         <div className="bg-[url('https://images.unsplash.com/photo-1613316122132-81de453d8610?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80')] bg-no-repeat bg-cover bg-center p-10">
             <div className="flex justify-center">
-                <div className="[word-spacing:40px] font-bold text-6xl pb-8">WELCOME, WE'RE GLAD YOU'RE HERE.</div>
+                <div className="[word-spacing:40px] font-semibold text-5xl pb-8">WELCOME, WE'RE GLAD YOU'RE HERE</div>
             </div>
             <img alt='venn diagram' src={venn} className="venn"/>
             <div className="flex justify-between m-3 mt-8">
