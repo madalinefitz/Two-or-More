@@ -8,7 +8,7 @@ function NavBar(){
             
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
-                    <div className="bg-[#525252] hover:bg-gray-200 hover:text-[#525252] text-white font-bold py-3 px-4 rounded-full">
+                    <div className="bg-[#525252] hover:bg-[#E8E4DE] hover:text-[#525252] text-white font-bold py-2 px-4">
                         <Link to='/connect'>GET CONNECTED</Link>
                     </div>
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
