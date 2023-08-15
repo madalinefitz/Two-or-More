@@ -1,21 +1,67 @@
 import {useState, useEffect} from "react"
 import venn from './logoHandwritten.png'
+import mission from '../missionText.png';
 
 
 
 function Home(){
     
     return (
-        <div className="bg-[url('https://images.unsplash.com/photo-1613316122132-81de453d8610?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80')] bg-no-repeat bg-cover p-10">
-            <div className="flex justify-center">
-                <div className="[word-spacing:40px] font-semibold text-5xl pb-8">WELCOME, WE'RE GLAD YOU'RE HERE</div>
-            </div>
-            <img alt='venn diagram' src={venn} className="venn"/>
-            <div className="flex justify-between m-3 mt-8">
-                <div className="text-[#D6C6AA] bg-[#292929] items-center content-center w-1/3 text-center text-2xl m-2 p-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
-                <div className="text-[#D6C6AA] bg-[rgb(41,41,41)] items-center content-center w-1/3 text-center text-2xl m-2 p-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
-                <div className="text-[#D6C6AA] bg-[#292929] items-center content-center w-1/3 text-center text-2xl m-2 p-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
-            </div>
+        <div className="p-10">
+            <div className="flex">
+                
+                
+                    {/* <div className=""><img alt='venn diagram' src={venn} className="venn" style={{}}/></div> */}
+                    <div class="container mx-auto px-5 py-2 lg:px-5 lg:pt-10">
+                        <div class="-m-1 flex flex-wrap md:-m-2">
+                            <div class="flex w-1/2 flex-wrap">
+                            <div class="w-1/2 p-1 md:p-2">
+                                <img
+                                alt="gallery"
+                                class="block h-full w-full object-cover object-center"
+                                src={"https://images.unsplash.com/photo-1549144277-47d96d572dc4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"} />
+                            </div>
+                            <div class="w-1/2 p-1 md:p-2">
+                                <img
+                                alt="gallery"
+                                class="block h-full w-full object-contain object-center"
+                                src={mission} />
+                            </div>
+                            <div class="w-full p-1 md:p-2">
+                                <img
+                                alt="gallery"
+                                class="block h-full w-full object-contain object-center"
+                                src={venn}
+                                style={{height: "80vh", width: "80vh"}}  />
+                            </div>
+                            </div>
+                            <div class="flex w-1/2 flex-wrap">
+                            <div class="w-full p-1 md:p-2">
+                                <img
+                                alt="gallery"
+                                class="block h-full w-full object-cover object-center"
+                                src="https://images.unsplash.com/photo-1613316122132-81de453d8610?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                                style={{height: "80vh", width: "80vh"}} />
+                            </div>
+                            <div class="w-1/2 p-1 md:p-2">
+                                <img
+                                alt="gallery"
+                                class="block h-full w-full object-cover object-center"
+                                src="https://images.unsplash.com/photo-1621341104121-d610c0dc4228?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
+                            </div>
+                            <div class="w-1/2 p-1 md:p-2">
+                                <img
+                                alt="gallery"
+                                class="block h-full w-full object-cover object-center"
+                                src="https://images.unsplash.com/photo-1579736170791-e7ce1a38e203?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                </div>
+
+            
         </div>
     )
 }
