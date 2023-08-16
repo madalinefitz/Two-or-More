@@ -26,7 +26,7 @@ export default function Stories () {
 
 
     return (
-        <div className="bg-[#D6C6AA] bg-cover p-10 pb-20 flex justify-center">
+        <div className="bg-[#FDFDFD] bg-cover p-10 pb-20 flex justify-center">
             <div>
             <div className= "flex justify-center ">
                 <h1 className="justify-center text-8xl font-semibold m-2">We all have a story.</h1>
