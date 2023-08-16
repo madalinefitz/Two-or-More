@@ -7,52 +7,52 @@ import mission from '../missionText.png';
 function Home(){
     
     return (
-        <div className="p-10">
+        <div className="">
             <div className="flex">
                 
                 
                     {/* <div className=""><img alt='venn diagram' src={venn} className="venn" style={{}}/></div> */}
-                    <div class="container mx-auto px-5 py-2 lg:px-5 lg:pt-10">
-                        <div class="-m-1 flex flex-wrap md:-m-2">
-                            <div class="flex w-1/2 flex-wrap">
-                            <div class="w-1/2 p-1 md:p-2">
+                    <div className="container mx-auto px-5 py-2 lg:px-5 lg:pt-10">
+                        <div className="-m-1 flex flex-wrap md:-m-2">
+                            <div className="flex w-1/2 flex-wrap">
+                            <div className="w-1/2 p-1 md:p-2">
                                 <img
                                 alt="gallery"
-                                class="block h-full w-full object-cover object-center"
+                                className="block h-full w-full object-cover object-center"
                                 src={"https://images.unsplash.com/photo-1549144277-47d96d572dc4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"} />
                             </div>
-                            <div class="w-1/2 p-1 md:p-2">
+                            <div className="w-1/2 p-1 md:p-2">
                                 <img
                                 alt="gallery"
-                                class="block h-full w-full object-contain object-center"
+                                className="block h-full w-full object-contain object-center"
                                 src={venn} />
                             </div>
-                            <div class="w-full p-1 md:p-2">
+                            <div className="w-full p-1 md:p-2">
                                 <img
                                 alt="gallery"
-                                class="block h-full w-full object-contain object-center"
+                                className="block h-full w-full object-contain object-center"
                                 src={mission}
                                 style={{height: "80vh", width: "80vh"}}  />
                             </div>
                             </div>
-                            <div class="flex w-1/2 flex-wrap">
-                            <div class="w-full p-1 md:p-2">
+                            <div className="flex w-1/2 flex-wrap">
+                            <div className="w-full p-1 md:p-2">
                                 <img
                                 alt="gallery"
-                                class="block h-full w-full object-cover object-center"
+                                className="block h-full w-full object-cover object-center"
                                 src="https://images.unsplash.com/photo-1613316122132-81de453d8610?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
                                 style={{height: "80vh", width: "80vh"}} />
                             </div>
-                            <div class="w-1/2 p-1 md:p-2">
+                            <div className="w-1/2 p-1 md:p-2">
                                 <img
                                 alt="gallery"
-                                class="block h-full w-full object-cover object-center"
+                                className="block h-full w-full object-cover object-center"
                                 src="https://images.unsplash.com/photo-1621341104121-d610c0dc4228?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
                             </div>
-                            <div class="w-1/2 p-1 md:p-2">
+                            <div className="w-1/2 p-1 md:p-2">
                                 <img
                                 alt="gallery"
-                                class="block h-full w-full object-cover object-center"
+                                className="block h-full w-full object-cover object-center"
                                 src="https://images.unsplash.com/photo-1579736170791-e7ce1a38e203?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
                             </div>
                             </div>
