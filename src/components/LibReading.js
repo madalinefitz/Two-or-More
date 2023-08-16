@@ -5,7 +5,7 @@ export default function LibReading() {
     const [books, setBooks] = useState([])
 
     useEffect(()=>{
-        fetch('/reading')
+        fetch('https://twoormore-info-service.azurewebsites.net/reading')
             .then(r => r.json())
             .then(data => setBooks(data))
     }, [])

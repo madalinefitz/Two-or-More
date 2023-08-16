@@ -26,7 +26,7 @@ function AboutUs(){
                                 height="360vh" 
                                 frameborder="0" 
                                 allow="autoplay; fullscreen; picture-in-picture" 
-                                allowfullscreen
+                                allowFullScreen
                             />
                         </div>
                         <div className="w-1/2 h-96 py-20">

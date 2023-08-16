@@ -7,7 +7,7 @@ export default function Stories () {
     const [stories, setStories] = useState([])
 
     useEffect(() => {
-        fetch("/stories")
+        fetch("https://twoormore-info-service.azurewebsites.net/stories")
             .then(r => {
                 if(r.ok) {
                     r.json().then(data => {
