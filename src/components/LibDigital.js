@@ -39,10 +39,11 @@ export default function LibDigital() {
 
 
     return(
-        <div className = "flex justify-center p-5 ">
-            <div className="bg-[#292929] w-2/3 text-[#E8E4DE] text-2xl p-5">
+        <div className = "flex justify-center p-5">
+            <div class="text-center text-4xl">New Materials Coming Soon!</div>
+            {/* <div className="bg-[#292929] w-2/3 text-[#E8E4DE] text-2xl p-5">
                 {displayDigMaterials}
-            </div>
+            </div> */}
         </div>
     )
 }

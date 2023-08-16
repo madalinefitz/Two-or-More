@@ -26,7 +26,7 @@ export default function Stories () {
 
 
     return (
-        <div className="bg-[#D6C6AA] bg-cover p-10 pb-20 flex justify-center">
+        <div className="bg-[#FDFDFD] bg-cover p-10 pb-20 flex justify-center">
             <div>
             <div className= "flex justify-center ">
                 <h1 className="justify-center text-8xl font-semibold m-2">We all have a story.</h1>
@@ -36,9 +36,10 @@ export default function Stories () {
                     <Link className="hover:text-white animate-pulse" to="/share">Ready to share yours?</Link>
                 </div>
             </div>
-            <div className="content-center mx-40 mb-10">
+            <div class="text-center text-4xl p-10">Stories Coming Soon!</div>
+            {/* <div className="content-center mx-40 mb-10">
             {displayStories}
-            </div>
+            </div> */}
             <div>
                 
             </div>

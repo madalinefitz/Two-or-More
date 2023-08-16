@@ -23,11 +23,11 @@ export default function LibVocabulary() {
         <div>
             <div className="container mx-auto align-content-center">
                 <div className="text-center text-4xl pb-20 pt-10">
-                        <h1>Words Have Meaning</h1>
+                        <h1>New Vocabulary Coming Soon!</h1>
                 </div>
-                <div className="flex flex-row flex-wrap pr-40 pl-40">
+                {/* <div className="flex flex-row flex-wrap pr-40 pl-40">
                     {wordComponent}
-                </div>
+                </div> */}
             </div>
         </div>
     )
