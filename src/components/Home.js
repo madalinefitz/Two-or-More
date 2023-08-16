@@ -25,13 +25,13 @@ function Home(){
                                 <img
                                 alt="gallery"
                                 class="block h-full w-full object-contain object-center"
-                                src={mission} />
+                                src={venn} />
                             </div>
                             <div class="w-full p-1 md:p-2">
                                 <img
                                 alt="gallery"
                                 class="block h-full w-full object-contain object-center"
-                                src={venn}
+                                src={mission}
                                 style={{height: "80vh", width: "80vh"}}  />
                             </div>
                             </div>
