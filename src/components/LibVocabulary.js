@@ -6,7 +6,7 @@ export default function LibVocabulary() {
     const [vocab, setVocab] = useState([])
     
     useEffect( ()=>{
-        fetch('/vocabulary')
+        fetch('https://twoormore-info-service.azurewebsites.net/vocabulary')
             .then(r => r.json())
             .then(data => setVocab(data))
         }, []
