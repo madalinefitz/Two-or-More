@@ -18,10 +18,10 @@ export default function LibReading() {
 
     return(
         <div>
-            <div class="text-center text-4xl pt-10">Great Books</div>
-            <div class="flex flex-wrap ps-72 pr-0 py-14 ">
+            <div class="text-center text-4xl pt-10">New Book Suggestions Coming Soon!</div>
+            {/* <div class="flex flex-wrap ps-72 pr-0 py-14 ">
                 {bookComponents}
-            </div>
+            </div> */}
         </div>
     )
 }
