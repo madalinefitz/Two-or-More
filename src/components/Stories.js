@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { Link } from "react-router-dom";
 import Story from "./Story"
 
-// stories will be pulled from database!!
+// stories will be pulled from database!! //
 export default function Stories () {
     const [stories, setStories] = useState([])
 
@@ -33,7 +33,7 @@ export default function Stories () {
             </div>
             <div className= "flex justify-center ">
                 <div className=" text-5xl font-semibold mb-5 italic ">
-                    <Link className="hover:text-white animate-pulse" to="/share">Ready to share yours?</Link>
+                    <Link className="hover:text-orange-500 animate-pulse" to="/share">Ready to share yours?</Link>
                 </div>
             </div>
             <div class="text-center text-4xl p-10">Stories Coming Soon!</div>
