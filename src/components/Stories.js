@@ -26,13 +26,13 @@ export default function Stories () {
 
 
     return (
-        <div className="bg-[#FDFDFD] bg-cover p-10 pb-20 flex justify-center">
+        <div className="bg-[#FDFDFD] bg-cover p-10 pb-20 flex justify-center min-h-screen">
             <div>
             <div className= "flex justify-center ">
-                <h1 className="justify-center text-8xl font-semibold m-2">We all have a story.</h1>
+                <h1 className="justify-center text-5xl sm:text-8xl font-semibold m-2">We all have a story.</h1>
             </div>
             <div className= "flex justify-center ">
-                <div className="text-5xl font-semibold mb-5 italic ">
+                <div className=" text-5xl font-semibold mb-5 italic ">
                     <Link className="hover:text-white animate-pulse" to="/share">Ready to share yours?</Link>
                 </div>
             </div>
