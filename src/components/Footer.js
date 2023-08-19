@@ -1,7 +1,7 @@
 export default function Footer () {
 
     return (
-        <footer className="bg-neutral-100 text-center dark:bg-neutral-600 lg:text-center ">
+        <footer className="static bottom-0 bg-neutral-100 text-center dark:bg-neutral-600 lg:text-center ">
         <div className="container p-6 text-neutral-800 dark:text-neutral-200">
             {/* <div className="grid gap-4 lg:grid-cols-1"> */}
             <div className="mb-6 md:mb-0">
