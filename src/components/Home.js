@@ -1,18 +1,12 @@
-import {useState, useEffect} from "react"
 import venn from './logoHandwritten.png'
 import mission from '../missionText.png';
-
-
 
 function Home(){
     
     return (
-        <div className="">
+        <div className="p-1 sm:p-2 pt-10 min-h-screen">
             <div className="flex">
-                
-                
-                    {/* <div className=""><img alt='venn diagram' src={venn} className="venn" style={{}}/></div> */}
-                    <div className="container mx-auto px-5 py-2 lg:px-5 lg:pt-10">
+                    <div className="container mx-auto px-2 py-2 lg:px-5 lg:pt-10">
                         <div className="-m-1 flex flex-wrap md:-m-2">
                             <div className="flex w-1/2 flex-wrap">
                             <div className="w-1/2 p-1 md:p-2">
@@ -32,7 +26,14 @@ function Home(){
                                 alt="gallery"
                                 className="block h-full w-full object-contain object-center"
                                 src={mission}
-                                style={{height: "80vh", width: "80vh"}}  />
+                                />
+                            </div>
+                            <div className="w-full p-1 md:p-2">
+                                <img
+                                alt="gallery"
+                                className="block h-full w-full object-contain object-center"
+                                src="https://images.unsplash.com/photo-1685314627216-600b891897ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+                                />
                             </div>
                             </div>
                             <div className="flex w-1/2 flex-wrap">
@@ -41,13 +42,25 @@ function Home(){
                                 alt="gallery"
                                 className="block h-full w-full object-cover object-center"
                                 src="https://images.unsplash.com/photo-1613316122132-81de453d8610?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-                                style={{height: "80vh", width: "80vh"}} />
+                                />
                             </div>
                             <div className="w-1/2 p-1 md:p-2">
                                 <img
                                 alt="gallery"
                                 className="block h-full w-full object-cover object-center"
-                                src="https://images.unsplash.com/photo-1621341104121-d610c0dc4228?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
+                                src="https://images.unsplash.com/photo-1527630941-4a229fd674ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGFic3RyYWN0JTIwaGFuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" />
+                            </div>
+                            <div className="w-1/2 p-1 md:p-2">
+                                <img
+                                alt="gallery"
+                                className="block h-full w-full object-cover object-center"
+                                src="https://images.unsplash.com/photo-1544026230-488aeae72c0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" />
+                            </div>
+                            <div className="w-1/2 p-1 md:p-2">
+                                <img
+                                alt="gallery"
+                                className="block h-full w-full object-cover object-center"
+                                src="https://images.unsplash.com/photo-1454923634634-bd1614719a7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ymx1cnJlZCUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" />
                             </div>
                             <div className="w-1/2 p-1 md:p-2">
                                 <img
@@ -58,10 +71,14 @@ function Home(){
                             </div>
                         </div>
                         </div>
-                    
+                        
                 </div>
-
-            
+                {/* <div>
+                            <img 
+                            src="https://images.unsplash.com/photo-1685314627216-600b891897ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+                            >
+                            </img>
+                        </div> */}
         </div>
     )
 }
