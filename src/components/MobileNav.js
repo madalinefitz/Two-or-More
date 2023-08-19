@@ -13,7 +13,7 @@ export default function MobileNav() {
         <nav className="visible sm:hidden p-2">
             <div className="px-2 sm:px-6 lg:px-8">
                 <div className="flex justify-between ">
-                    <div className="bg-[#525252] hover:bg-[#E8E4DE] hover:text-[#525252] text-white font-bold py-3 px-4">
+                    <div className="bg-[#525252] hover:bg-[#E8E4DE] text-white font-bold py-3 px-4">
                         <Link to='/connect'>GET CONNECTED</Link>
                     </div>
                     <div onClick={handleShow}  className="sm:hidden p-4 space-y-2 z-10 text-right">
@@ -28,7 +28,7 @@ export default function MobileNav() {
                             <Link
                             to="/"
                             exact="true"
-                            className="hover:text-gray rounded-md px-3 py-2 text-sm sm:text-xl font-medium"
+                            className="text-white rounded-md px-3 py-2 text-sm sm:text-xl font-medium"
                             onClick={()=> setShowMenu(!showMenu)}
                             >
                                 HOME
@@ -38,7 +38,7 @@ export default function MobileNav() {
                             <Link
                             to="aboutus"
                             exact="true"
-                            className="hover:text-white rounded-md px-3 py-2 text-sm sm:text-xl font-medium"
+                            className="text-white rounded-md px-3 py-2 text-sm sm:text-xl font-medium"
                             onClick={()=> setShowMenu(!showMenu)}
                             >
                                 ABOUT US
@@ -48,7 +48,7 @@ export default function MobileNav() {
                             <Link
                             to="share"
                             exact="true"
-                            className="hover:text-white rounded-md px-3 py-2 text-sm sm:text-xl font-medium"
+                            className="text-white rounded-md px-3 py-2 text-sm sm:text-xl font-medium"
                             onClick={()=> setShowMenu(!showMenu)}
                             >
                                 SHARE
@@ -58,7 +58,7 @@ export default function MobileNav() {
                             <Link
                             to="stories"
                             exact="true"
-                            className="hover:text-white rounded-md px-3 py-2 text-sm sm:text-xl font-medium"
+                            className="text-white rounded-md px-3 py-2 text-sm sm:text-xl font-medium"
                             onClick={()=> setShowMenu(!showMenu)}
                             >
                                 STORIES
@@ -68,7 +68,7 @@ export default function MobileNav() {
                             <Link
                             to="library"
                             exact="true"
-                            className="hover:text-white rounded-md px-3 py-2 text-sm sm:text-xl font-medium"
+                            className="text-white rounded-md px-3 py-2 text-sm sm:text-xl font-medium"
                             onClick={()=> setShowMenu(!showMenu)}
                             >
                                 LIBRARY
