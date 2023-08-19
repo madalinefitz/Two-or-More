@@ -1,8 +1,5 @@
-import {useState, useEffect} from "react"
 import venn from './logoHandwritten.png'
 import mission from '../missionText.png';
-
-
 
 function Home(){
     
