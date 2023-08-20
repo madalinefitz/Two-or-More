@@ -47,7 +47,7 @@ export default function Share () {
     return(
         <div>
         <div className="flex-col py-28 pl-28 pr-16 text-[#E8E4DE] bg-[#292929] bg-cover h-full">
-            <div className="text-5xl lg:text-7xl text-right lg:ml-20 lg:p-8 p-4">
+            <div className="text-3xl lg:text-7xl text-right lg:ml-20 lg:p-8 p-4">
                 We'd love to hear more about you! This is a safe space to share your story. 
                 Your experiences. 
                 Your history. 
