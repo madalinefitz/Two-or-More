@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 export default function GetConnected () {
     return (
         <div className="bg-[url('https://images.unsplash.com/photo-1593526613712-7b4b9a707330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')] md:bg-cover bg-center h-screen p-20">
-            <div className="text-white text-3xl md:text-6xl font-bold text-center md:p-5">
+            <div className="text-white m-0 text-3xl md:text-6xl font-bold text-center md:p-5">
             <Typewriter
                 options={{
                 strings: ['JOIN THE COMMUNITY.'],
@@ -12,7 +12,7 @@ export default function GetConnected () {
                 }}
                 />
             </div>
-            <div className="container md:pt-16 fixed top-1/3">
+            <div className="container md:pt-16 absolute top-1/3">
                 <div className="flex flex-col text-white sm:justify-center sm:flex-row sm:gap-x-20">
                 <a href="#!" className="dark:text-neutral-200">
                     <svg

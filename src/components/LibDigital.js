@@ -5,7 +5,7 @@ export default function LibDigital() {
     const [digMaterials, setDigMaterials] = useState([])
 
     useEffect(() => {
-        fetch('https://twoormore-info-service.azurewebsites.net/digitalmaterials')
+            fetch('https://twoormore-info-service.azurewebsites.net/digitalmaterials')
             .then(r => {
                 if(r.ok) {
                     r.json().then(data => {
@@ -16,7 +16,7 @@ export default function LibDigital() {
                 }
             })
     }, [])
-
+    
     const displayDigMaterials = digMaterials.map(d => {
         return (
         <div className="p-5">
