@@ -5,7 +5,7 @@ export default function LibDigital() {
     const [digMaterials, setDigMaterials] = useState([])
 
     useEffect(() => {
-        fetch('https://twoormore-info-service.azurewebsites.net/digitalmaterials')
+            fetch('https://twoormore-info-service.azurewebsites.net/digitalmaterials')
             .then(r => {
                 if(r.ok) {
                     r.json().then(data => {
@@ -16,7 +16,7 @@ export default function LibDigital() {
                 }
             })
     }, [])
-
+    
     const displayDigMaterials = digMaterials.map(d => {
         return (
         <div className="p-5">
@@ -40,10 +40,9 @@ export default function LibDigital() {
 
     return(
         <div className = "flex justify-center p-5">
-            <div class="text-center text-4xl">New Materials Coming Soon!</div>
-            {/* <div className="bg-[#292929] w-2/3 text-[#E8E4DE] text-2xl p-5">
+            <div className="bg-[#292929] w-2/3 text-[#E8E4DE] text-2xl p-5">
                 {displayDigMaterials}
-            </div> */}
+            </div>
         </div>
     )
 }
