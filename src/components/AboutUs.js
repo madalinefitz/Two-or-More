@@ -18,10 +18,10 @@ function AboutUs(){
                 </span>
             </div>
             <h1 className="font-bold pb-3 text-xl md:text-7xl text-left pt-10 md:pt-20">[ the team: ]</h1>
-                <div className="container place-content-center m-10">
+                <div className="container place-content-center md:m-10">
                     <div className="flex flex-wrap items-center md:justify-between ">
                         <div className="md:w-1/3 md:h-96 md:py-12 md:px-10 m-3 text-[#292929] bg-[#E8E4DE] shadow-lg content-center">
-                            <h1 className="text-[#292929] text-3xl md:text-7xl text-center md:mt-20 mt-10 font-bold">MEET BRIAN</h1>
+                            <h1 className="text-[#292929] text-3xl md:text-7xl text-center md:mt-20 p-5 font-bold">MEET BRIAN</h1>
                         </div>
                         <div className="md:mt-20 items-center content-center">
                             <iframe src="https://player.vimeo.com/video/791915330?h=4e82b9fac6&color=f7542b& title=0&byline=0&portrait=0" 
@@ -30,6 +30,7 @@ function AboutUs(){
                                 frameborder="0" 
                                 allow="autoplay; fullscreen; picture-in-picture" 
                                 allowFullScreen
+                                className="w-full aspect-video md:w-640vh md:h-360vh"
                             />
                         </div>
                     </div>
