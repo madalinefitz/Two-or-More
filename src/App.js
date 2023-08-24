@@ -8,11 +8,13 @@ import Share from './components/Share';
 import Library from './components/Library';
 import Footer from './components/Footer';
 import GetConnected from './components/GetConnected';
+import MobileNav from './components/MobileNav';
 
 function App() {
   return (
     <div >
       <NavBar/>
+      <MobileNav/>
         <Routes>
             <Route exact path="/" element={<Home/>} />
             <Route path="/stories" element={<Stories />} />

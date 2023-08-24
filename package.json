@@ -2,6 +2,7 @@
   "name": "two-or-more",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://twoormore-info-service.azurewebsites.net",
   "dependencies": {
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^1.0.6",
