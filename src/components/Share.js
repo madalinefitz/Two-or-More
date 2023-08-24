@@ -19,7 +19,7 @@ export default function Share () {
         },
         validationSchema:formSchema,
         onSubmit: (values) => {
-            fetch("https://twoormore-info-service.azurewebsites.net/stories", {
+            fetch("/stories", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 credentials: "include",
