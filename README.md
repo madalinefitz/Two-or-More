@@ -1,4 +1,5 @@
-# Two Or More 
+# Two Or More
+[LIVE SITE HERE](https://brave-tree-0c566030f.3.azurestaticapps.net/)
 
 ## About 
 * Collaborators: [Madaline Fitzpatrick](https://github.com/madalinefitz), [Grace Nieboer](https://github.com/gnieb), [Anthony Liu](https://github.com/antlukeliu)
@@ -10,6 +11,23 @@
 * ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 * ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
+
+## Getting Started
+### See Live Site [HERE](https://brave-tree-0c566030f.3.azurestaticapps.net/)
+
+### Installation
+1. Fork and Clone the repo
+   ```sh
+   git clone https://github.com/madalinefitz/Two-or-More
+   ```
+2. Install npm packages
+    ```sh
+    npm install
+    ```
+4. Start the Front End
+    ```sh
+    npm start
+    ```
 
 ## What's Next for Two Or More?
 
