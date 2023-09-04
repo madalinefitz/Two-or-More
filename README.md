@@ -11,4 +11,6 @@
 * ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 
+## What's Next for Two Or More?
 
+We are currently working on a **SUBSCRIPTION** feature that allows site visitors to provide their contact information to receive community news, updates, and eventually be invited to the virtual community book club 
