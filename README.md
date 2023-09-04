@@ -31,7 +31,7 @@
     npm start
     ```
 
-## Features Completed
+## Features
 - **The LIBRARY** provides helpful educational resources, categorized by various material types (digital, print, audio, etc). It also features a vocabulary page that will highlight rotating founder-chosen words that have important meaning within the community.
 - Everyone has a story! The **Story** page features reader submissions that tell share their story with the Two Or More community. 
 - Readers inspired by others who have shared their stories can submit their own through the **Share** page, which is persisted to a PostgreSQL database
@@ -41,4 +41,4 @@
 ## What's Next for Two Or More?
 
 - We are currently working on a **SUBSCRIPTION** feature that allows site visitors to GET CONNECTED and STAY CONNECTED. They can provide their contact information to receive community news, updates, and eventually be invited to the virtual community book club 
-- We are also implementing an admin level of access that will allow the founders to add their rotating vocabulary selections, read and approve reader submissions, and other administrative activity
+- We are also implementing an admin level of access that will allow the founder to add rotating vocabulary selections, read and approve reader submissions, and other administrative activities
