@@ -1,5 +1,7 @@
 # Two Or More
-[LIVE SITE HERE](https://brave-tree-0c566030f.3.azurestaticapps.net/)
+[LIVE PROJECT HERE](https://brave-tree-0c566030f.3.azurestaticapps.net/)
+
+![Home Page](homepage.png)
 
 ## About 
 * Collaborators: [Madaline Fitzpatrick](https://github.com/madalinefitz), [Grace Nieboer](https://github.com/gnieb), [Anthony Liu](https://github.com/antlukeliu)
