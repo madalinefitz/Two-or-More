@@ -12,7 +12,7 @@ export default function GetConnected () {
         if(r.ok) {
             r.json().then(console.log)
         } else {
-            throw new Error(res.statusText);
+            throw new Error(r.statusText);
         }
     }
 
@@ -34,14 +34,15 @@ export default function GetConnected () {
                 email: '',
             }}
             validationSchema={subscribeSchema}
-            onSubmit={values => {
+            onSubmit={(values, {resetForm}) => {
                 // same shape as initial values
                 fetch("/emails", {
                     method: "POST",
                     headers:{"Content-Type":"application/json"},
                     body: JSON.stringify(values)
                 })
-                .then(handleResponse)
+                .then(handleResponse);
+                resetForm({values: ''});
             }}
             >
                 {({ errors, touched }) => (
