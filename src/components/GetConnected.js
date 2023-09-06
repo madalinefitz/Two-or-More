@@ -8,6 +8,14 @@ export default function GetConnected () {
         email: yup.string().email('*INVALID EMAIL').required("REQUIRED"),
     });
 
+    const handleResponse = (r) => {
+        if(r.ok) {
+            r.json().then(console.log)
+        } else {
+            throw new Error(res.statusText);
+        }
+    }
+
     return (
         <div className="bg-[url('https://images.unsplash.com/photo-1593526613712-7b4b9a707330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')] md:bg-cover bg-center h-screen p-20">
             <div className="text-white m-0 text-3xl md:text-6xl font-bold text-center md:p-5">
@@ -28,7 +36,12 @@ export default function GetConnected () {
             validationSchema={subscribeSchema}
             onSubmit={values => {
                 // same shape as initial values
-                console.log(values);
+                fetch("/emails", {
+                    method: "POST",
+                    headers:{"Content-Type":"application/json"},
+                    body: JSON.stringify(values)
+                })
+                .then(handleResponse)
             }}
             >
                 {({ errors, touched }) => (
