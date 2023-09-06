@@ -1,4 +1,6 @@
 import Typewriter from 'typewriter-effect';
+import { useFormik } from "formik";
+import * as yup from "yup";
 
 export default function GetConnected () {
     return (
@@ -12,7 +14,18 @@ export default function GetConnected () {
                 }}
                 />
             </div>
-            <div className="container md:pt-16 absolute top-1/3">
+            <div className="text-4xl text-white mx-auto text-center italic">Get the latest news and community updates!</div>
+            <div className="w-full max-w-lg mx-auto sm:py-10">
+                <form className="shadow-2xl shadow-black rounded px-8 pt-6 pb-8 mb-4">
+                <div className="mb-4">
+                    <label className="block text-white text-xl font-bold mb-2" for="username">
+                        Your Email
+                    </label>
+                    <input className="shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="example@gmail.com"/>
+                </div>
+                </form>
+            </div>
+            {/* <div className="container md:pt-16 absolute top-1/3">
                 <div className="flex flex-col text-white sm:justify-center sm:flex-row sm:gap-x-20">
                 <a href="#!" className="dark:text-neutral-200">
                     <svg
@@ -67,7 +80,7 @@ export default function GetConnected () {
                     </svg>
                 </a>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
