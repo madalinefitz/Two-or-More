@@ -1,6 +1,21 @@
 import Typewriter from 'typewriter-effect';
+import { Formik, Form, Field } from 'formik';
+import * as yup from "yup";
 
 export default function GetConnected () {
+
+    const subscribeSchema = yup.object().shape({
+        email: yup.string().email('*INVALID EMAIL').required("REQUIRED"),
+    });
+
+    const handleResponse = (r) => {
+        if(r.ok) {
+            r.json().then(console.log)
+        } else {
+            throw new Error(r.statusText);
+        }
+    }
+
     return (
         <div className="bg-[url('https://images.unsplash.com/photo-1593526613712-7b4b9a707330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')] md:bg-cover bg-center h-screen p-20">
             <div className="text-white m-0 text-3xl md:text-6xl font-bold text-center md:p-5">
@@ -12,7 +27,34 @@ export default function GetConnected () {
                 }}
                 />
             </div>
-            <div className="container md:pt-16 absolute top-1/3">
+            <div className="text-4xl text-white mx-auto text-center italic">Get the latest news and community updates!</div>
+            <div className="w-full max-w-lg mx-auto sm:py-10">
+            <Formik
+            initialValues={{
+                email: '',
+            }}
+            validationSchema={subscribeSchema}
+            onSubmit={(values, {resetForm}) => {
+                // same shape as initial values
+                fetch("/emails", {
+                    method: "POST",
+                    headers:{"Content-Type":"application/json"},
+                    body: JSON.stringify(values)
+                })
+                .then(handleResponse);
+                resetForm({values: ''});
+            }}
+            >
+                {({ errors, touched }) => (
+                <Form className="shadow-2xl shadow-black rounded px-8 pt-6 pb-8 mb-4">
+                    <Field name="email" className="shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="example@gmail.com" />
+                    {errors.email && touched.email ? <div className="text-white italic text-xl">{errors.email}</div> : null}
+                    <button type="submit" className="bg-green-900 hover:bg-green-300 text-white font-bold py-2 px-4 my-2 rounded focus:outline-none focus:shadow-outline">Subscribe</button>
+                </Form>
+                )}
+            </Formik>
+            </div>
+            {/* <div className="container md:pt-16 absolute top-1/3">
                 <div className="flex flex-col text-white sm:justify-center sm:flex-row sm:gap-x-20">
                 <a href="#!" className="dark:text-neutral-200">
                     <svg
@@ -67,7 +109,7 @@ export default function GetConnected () {
                     </svg>
                 </a>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
