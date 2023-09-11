@@ -41,7 +41,10 @@ export default function LibDigital() {
     return(
         <div className = "flex justify-center p-5">
             <div className="bg-[#292929] w-2/3 text-[#E8E4DE] text-2xl p-5">
-                {displayDigMaterials}
+                {digMaterials.length > 0? displayDigMaterials :
+                <>
+                No materials yet!
+                </>}
             </div>
         </div>
     )
