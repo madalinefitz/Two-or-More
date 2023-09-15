@@ -43,11 +43,9 @@ function NavBar(){
                             </div>
                         </div>
                     </div>
-                    {/* <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                        <button type="button" className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                            Donate Now
-                        </button>
-                    </div> */}
+                    <div className="bg-[#525252] hover:bg-[#E8E4DE] hover:text-[#525252] text-white font-bold py-3 px-4 mr-0">
+                        <Link to='/donate'>Donate Now</Link>
+                    </div>
                 </div>
             </div>
         </nav>
