@@ -1,5 +1,6 @@
 # Two Or More
-[LIVE APPLICATION HERE](https://brave-tree-0c566030f.3.azurestaticapps.net/)
+[LIVE APPLICATION](https://brave-tree-0c566030f.3.azurestaticapps.net/)
+[BACK END REPO](https://github.com/madalinefitz/Two-Or-More-Java-BE)
 
 ![Home Page](homepage.png)
 
@@ -12,6 +13,9 @@
 * ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 * ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 * ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+* ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+* ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+* ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 
 
 ## Getting Started
@@ -36,9 +40,10 @@
 - Everyone has a story! The **Story** page features reader submissions that tell share their story with the Two Or More community. 
 - Readers inspired by others who have shared their stories can submit their own through the **Share** page, which is persisted to a PostgreSQL database
 - Read More about the roots of Two or More on the **About Us** Page, featuring the amazing contributors of Two or More. View the embedded video stories to get to know the Brian, the founder of Two or More
+- **SUBSCRIBE** to Two or More updates, news, and book club communication. Get Connected and stay connected!
 
 
 ## What's Next for Two Or More?
 
-- We are currently working on a **SUBSCRIPTION** feature that allows site visitors to GET CONNECTED and STAY CONNECTED. They can provide their contact information to receive community news, updates, and eventually be invited to the virtual community book club 
+- Donation feature to financially contribute to the non profit 
 - We are also implementing an admin level of access that will allow the founder to add rotating vocabulary selections, read and approve reader submissions, and other administrative activities
