@@ -24,7 +24,7 @@ function App() {
             <Route path="/share" element={<Share />} />
             <Route path="/library/*" element={<Library />} />
             <Route path="/connect" element={<GetConnected/>} />
-            <Route path="/donate" element={<Donate/>} />
+            <Route path="https://donorbox.org/twoormore"/>
         </Routes>
         <Footer />
     </div>

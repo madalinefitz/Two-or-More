@@ -44,7 +44,7 @@ function NavBar(){
                         </div>
                     </div>
                     <div className="bg-[#525252] hover:bg-[#E8E4DE] hover:text-[#525252] text-white font-bold py-3 px-4 mr-0">
-                        <Link to='/donate'>Donate Now</Link>
+                        <Link to='https://donorbox.org/twoormore' target='_blank'>Donate Now</Link>
                     </div>
                 </div>
             </div>
