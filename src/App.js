@@ -9,6 +9,8 @@ import Library from './components/Library';
 import Footer from './components/Footer';
 import GetConnected from './components/GetConnected';
 import MobileNav from './components/MobileNav';
+import Donate from './components/Donate';
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
             <Route path="/share" element={<Share />} />
             <Route path="/library/*" element={<Library />} />
             <Route path="/connect" element={<GetConnected/>} />
+            <Route path="https://donorbox.org/twoormore"/>
         </Routes>
         <Footer />
     </div>
